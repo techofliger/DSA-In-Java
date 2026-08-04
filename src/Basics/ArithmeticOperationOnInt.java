@@ -1,9 +1,12 @@
 package Basics;
 
-public class ArithmeticOperationOnInt {
+public class Variables {
     public static void main(String[] args) {
-
-
-        System.out.println();
+        int x = 50;
+        int y = 8;
+        System.out.println(x+y);
+        System.out.println(x-y);
+        System.out.println(x*y);
+        System.out.println(x/y);
     }
 }
