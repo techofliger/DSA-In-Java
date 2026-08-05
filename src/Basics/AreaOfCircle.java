@@ -1,6 +1,5 @@
 package Basics;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class AreaOfCircle {

@@ -5,6 +5,8 @@ public class VariableNaming {
         // _ or alphabet ot $
         // ! @ # $ % ^ & * ( ) _ +
         int xy = 3;
-        int raghav = 5;
+        int ra = 5;
+        System.out.print(xy + ra);
+
     }
 }
