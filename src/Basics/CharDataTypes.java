@@ -17,7 +17,7 @@ public class CharDataTypes {
 //        char eva = 'b';
 //        System.out.println(eva+0);
 
-        int x = 43;
+        int x = 17;
         char ch = (char)x;
         System.out.println(ch);
     }
