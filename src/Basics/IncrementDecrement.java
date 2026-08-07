@@ -5,6 +5,8 @@ public class IncrementDecrement {
         int x = 10;
         System.out.println(x);
         x++;
-        System.out.println(x);
+
+        int a = x + 39;
+        System.out.println(a);
     }
 }
