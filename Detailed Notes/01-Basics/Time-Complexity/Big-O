@@ -1,0 +1,117 @@
+Big-O Notation
+1. What is Big-O?
+
+Big-O notation describes the upper bound of an algorithm's time or space growth as input size n increases.
+
+It is mainly used to describe the worst-case complexity of an algorithm.
+
+Simple Meaning
+
+Big-O tells us: "Algorithm maximum kitna grow kar sakta hai?"
+
+For example:
+
+T(n) = 3n² + 5n + 10
+
+For large n, the dominant term is n².
+
+Therefore:
+
+T(n) = O(n²)
+2. Why Do We Use Big-O?
+
+Big-O helps us:
+
+Compare algorithms
+Predict performance for large inputs
+Ignore machine-dependent execution time
+Focus on growth rate
+Analyze time and space requirements
+3. Common Big-O Complexities
+Complexity	Name	Example
+O(1)	Constant	Access array element
+O(log n)	Logarithmic	Binary Search
+O(n)	Linear	Linear Search
+O(n log n)	Linearithmic	Merge Sort
+O(n²)	Quadratic	Bubble Sort
+O(n³)	Cubic	Simple matrix operations
+O(2ⁿ)	Exponential	Some recursive problems
+O(n!)	Factorial	Brute-force permutations
+4. Examples
+Example 1: Constant
+int x = arr[0];
+
+Only one operation.
+
+Time Complexity = O(1)
+Example 2: Linear
+for(int i = 0; i < n; i++) {
+    System.out.println(i);
+}
+
+Loop runs n times.
+
+Time Complexity = O(n)
+Example 3: Quadratic
+for(int i = 0; i < n; i++) {
+    for(int j = 0; j < n; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+
+Outer loop → n
+
+Inner loop → n
+
+Total:
+
+n × n = n²
+
+
+Time Complexity = O(n²)
+Example 4: Logarithmic
+n → n/2 → n/4 → n/8 → ... → 1
+
+Number of steps:
+
+log₂ n
+
+Therefore:
+
+O(log n)
+
+Binary Search is a common example.
+
+5. Rules for Big-O
+Rule 1: Ignore Constants
+T(n) = 5n
+
+Remove constant 5.
+
+O(n)
+Rule 2: Keep Dominant Term
+T(n) = n² + n + 10
+
+Dominant term = n²
+
+O(n²)
+Rule 3: Sequential Operations
+O(n) + O(n²)
+
+Take the larger growth:
+
+O(n²)
+Rule 4: Nested Loops
+for(i = 0; i < n; i++)
+    for(j = 0; j < n; j++)
+
+Multiply:
+
+O(n × n) = O(n²)
+6. Important Point
+
+Big-O is an upper-bound notation mathematically.
+
+It does not always mean exactly "worst case."
+
+However, in algorithm discussions, Big-O is commonly used to express worst-case complexity.
